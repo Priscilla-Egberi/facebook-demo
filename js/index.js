@@ -33,16 +33,20 @@ const getUsers2 = async() =>{
 }
 getUsers2();
 
-let numbersOfThumbsup = document.getElementById("numbersOfThumbsup")
+let numbersOfThumbsup = document.getElementsByClassName("numbersOfThumbsup")[0]
+let numbersOfThumbsup2 = document.getElementsByClassName("numbersOfThumbsup")[1]
 console.log(numbersOfThumbsup);
 numbersOfThumbsup.textContent=0;
+numbersOfThumbsup2.textContent=0;
 
 
 
 document.querySelector("#thumbsUp1").addEventListener("click", function(e){
     if (numbersOfThumbsup.textContent == '0') {
-        numbersOfThumbsup.textContent++   
+        numbersOfThumbsup.textContent++;
+        numbersOfThumbsup2.textContent=numbersOfThumbsup.textContent 
     } else {
-        numbersOfThumbsup.textContent = 0
+        numbersOfThumbsup.textContent = 0;
+        numbersOfThumbsup2.textContent=numbersOfThumbsup.textContent 
     }
 })
