@@ -1,10 +1,21 @@
 body{
     margin-top: 2rem;
-    margin-right:30rem;
-    margin-left:30rem;
+    /* margin-right:30rem;
+    margin-left:30rem; */
+    margin:auto;
+}
+
+.card{
+    width:30%;
+    margin:auto;
 }
 
 .marginForThumbsup{
     margin-left: -10px;
 }
 
+@media (max-width:750px){
+    .card{
+        width:50%
+    }
+}
