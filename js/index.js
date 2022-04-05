@@ -7,6 +7,7 @@ let name3 = document.getElementsByClassName("name")[2];
 let postPicture=document.getElementsByClassName("postPicture")[0];
 let postPicture2=document.getElementsByClassName("postPicture")[1];
 let postPicture3=document.getElementsByClassName("postPicture")[2];
+
 const getUsers = async() =>{
     let res = await axios.get('https://randomuser.me/api/')
     const array= res.data.results[0];
@@ -38,8 +39,6 @@ let numbersOfThumbsup2 = document.getElementsByClassName("numbersOfThumbsup")[1]
 console.log(numbersOfThumbsup);
 numbersOfThumbsup.textContent=0;
 numbersOfThumbsup2.textContent=0;
-
-
 
 document.querySelector("#thumbsUp1").addEventListener("click", function(e){
     if (numbersOfThumbsup.textContent == '0') {
