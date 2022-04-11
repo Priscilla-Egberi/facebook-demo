@@ -1,13 +1,43 @@
 body{
     margin-top: 2rem;
-    /* margin-right:30rem;
-    margin-left:30rem; */
-    margin-left:auto;
+    width:30%;
+    margin:auto;
+}
+
+.gray{
+    background: #e6e3dc;
+}
+
+ul{
+    list-style: none;
+}
+
+li{
+    text-decoration: none;
+}
+
+
+a{
+    display:inline-block;
+    color:black;
+    width:fit-content;
+    height:fit-content
+}
+
+li a:focus, .current, li a:active{
+    color: blue;
+    border-bottom: blue solid 2px;
+}
+
+#fixed-section{
+    position:sticky;
+    top:0;
+    z-index: 1;
+    background-color: white;
+    
 }
 
 .card{
-    width:30%;
-    margin:auto;
     border:none;
 }
 
@@ -16,19 +46,21 @@ body{
 }
 
 @media (max-width:900px){
-    .card{
+    body{
         width:50%
     }
 }
 
 @media (max-width:750px){
-    .card{
+    body{
         width:60%
     }
 }
 
 @media (max-width:475px){
-    .card{
-        width:90%
+    body{
+        width:95%;
+        font-size: 13px;
+    
     }
 }

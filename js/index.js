@@ -95,9 +95,7 @@ const fetchUser = async () => {
         }
          
         })
-
-      
-     
+ 
      
    }}
         
