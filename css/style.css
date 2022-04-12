@@ -4,6 +4,11 @@ body{
     margin:auto;
 }
 
+.post-body{
+    
+    margin:0.8rem;
+}
+
 .gray{
     background: #e6e3dc;
 }
@@ -37,6 +42,19 @@ li a:focus, .current, li a:active{
     
 }
 
+td{
+    width:max-content !important;
+}
+
+.something{
+    width: max-content !important;
+}
+.line{
+    height:0.5rem;
+    width:100%;
+    background-color: rgb(204, 195, 195);
+}
+
 .card{
     border:none;
 }
@@ -49,18 +67,31 @@ li a:focus, .current, li a:active{
     body{
         width:50%
     }
+
+    .post-body{    
+        margin:0.8rem;
+    }
 }
 
 @media (max-width:750px){
     body{
         width:60%
     }
+
+    .post-body{
+    
+        margin:0.8rem;
+    }
 }
 
 @media (max-width:475px){
     body{
-        width:95%;
-        font-size: 13px;
+        width:100%;
+        font-size: 13px;    
+    }
+
+    .post-body{
     
+        margin:0.8rem;
     }
 }

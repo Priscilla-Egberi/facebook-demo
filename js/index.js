@@ -11,14 +11,14 @@ const fetchUser = async () => {
         let template = `
         <div class="card">
         <!-- head-section -->
-    <div class="d-flex justify-content-between">              
+    <div class="d-flex justify-content-between align-items-center">              
       <div>
        <div class="d-inline-block rounded-circle border border-primary border-5">
          <img src="${profile.picture.medium}" alt="" class="rounded-circle profile_picture">
        
      </div>    
            <div class="d-inline-block">
-           <h4 class="name">${profile.name.first} ${profile.name.last}</h4>
+           <h5 class="name">${profile.name.first} ${profile.name.last}</h5>
            <p class="text-muted"><span>4day</span> <i class="fa-solid fa-earth-africa"></i></p>
            </div>
       </div>    
